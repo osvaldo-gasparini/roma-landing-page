@@ -1,0 +1,132 @@
+---
+const projects = [
+  {
+    title: "Renovación de baño completa",
+    category: "Refacciones",
+    beforeImage: "https://images.pexels.com/photos/1910472/pexels-photo-1910472.jpeg?auto=compress&cs=tinysrgb&w=600",
+    afterImage: "https://images.pexels.com/photos/1358914/pexels-photo-1358914.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description: "Transformación completa de baño antiguo con nuevos revestimientos y sanitarios."
+  },
+  {
+    title: "Remodelación de cocina",
+    category: "Remodelaciones",
+    beforeImage: "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=600",
+    afterImage: "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description: "Modernización completa con muebles nuevos y mejor distribución del espacio."
+  },
+  {
+    title: "Construcción de pared divisoria",
+    category: "Albañilería",
+    beforeImage: "https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&w=600",
+    afterImage: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description: "Nueva pared divisoria para crear un ambiente independiente."
+  },
+  {
+    title: "Pintura exterior de edificio",
+    category: "Pintura",
+    beforeImage: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=600",
+    afterImage: "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description: "Renovación completa de fachada con tratamiento anti-humedad."
+  },
+  {
+    title: "Ampliación de living",
+    category: "Ampliaciones",
+    beforeImage: "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=600",
+    afterImage: "https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description: "Ampliación y modernización del espacio principal de la casa."
+  },
+  {
+    title: "Reforma integral departamento",
+    category: "Reformas integrales",
+    beforeImage: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=600",
+    afterImage: "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description: "Transformación completa de departamento de 3 ambientes."
+  }
+];
+---
+
+<section id="trabajos" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-16 fade-in">
+      <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+        Trabajos <span class="text-primary-700">Realizados</span>
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Mirá algunos de los proyectos que he completado. Cada trabajo refleja mi compromiso 
+        con la calidad y atención al detalle.
+      </p>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+      {projects.map((project, index) => (
+        <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 slide-up" style={`animation-delay: ${index * 150}ms`}>
+          <div class="p-6">
+            <!-- Category Badge -->
+            <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 text-primary-800 mb-4">
+              {project.category}
+            </div>
+            
+            <!-- Title -->
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              {project.title}
+            </h3>
+            
+            <!-- Description -->
+            <p class="text-gray-600 mb-6">
+              {project.description}
+            </p>
+          </div>
+
+          <!-- Before/After Images -->
+          <div class="grid grid-cols-2 gap-0">
+            <div class="relative group">
+              <img 
+                src={project.beforeImage} 
+                alt={`Antes - ${project.title}`}
+                class="w-full h-48 object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                <span class="text-white font-semibold text-sm p-3">ANTES</span>
+              </div>
+            </div>
+            
+            <div class="relative group">
+              <img 
+                src={project.afterImage} 
+                alt={`Después - ${project.title}`}
+                class="w-full h-48 object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                <span class="text-white font-semibold text-sm p-3">DESPUÉS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- CTA Section -->
+    <div class="text-center bg-gradient-to-r from-primary-50 to-blue-50 rounded-2xl p-8 fade-in">
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">
+        ¿Querés ver tu proyecto aquí?
+      </h3>
+      <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
+        Contactame para conversar sobre tu próximo proyecto. Cada trabajo es único 
+        y merece una atención personalizada.
+      </p>
+      <a 
+        href="https://wa.me/5491123456789?text=Hola%20Maximiliano%2C%20me%20gustaron%20los%20trabajos%20que%20vi%20en%20tu%20portfolio%20y%20me%20gustaría%20conversar%20sobre%20mi%20proyecto"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+      >
+        <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+        </svg>
+        Conversar sobre mi proyecto
+      </a>
+    </div>
+  </div>
+</section>

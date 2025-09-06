@@ -1,48 +1,28 @@
-# Astro Starter Kit: Basics
+# HomeFix Landing Page
 
-```sh
-npm create astro@latest -- --template basics
-```
+A modern, clean, and responsive landing page built with **Astro** and **Tailwind CSS**, designed to showcase home maintenance and repair services for small business owners.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+This project was created for a client offering a wide range of household services, including plumbing, carpentry, general repairs, and custom estimates. The landing page emphasizes trust, professionalism, and approachability, making it easy for potential clients to get in touch.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Features
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- **Responsive Design:** Works seamlessly across desktop, tablet, and mobile devices.
+- **Clean and Trustworthy UI:** Minimalist layout with clear call-to-actions to inspire confidence.
+- **Fast and Lightweight:** Optimized for performance using Astro's modern architecture.
+- **Tailwind CSS Styling:** Easy-to-maintain, utility-first styling for consistent design.
+- **Simple Contact Integration:** Encourages users to request quotes quickly and efficiently.
 
-## 🚀 Project Structure
+## Tech Stack
 
-Inside of your Astro project, you'll see the following folders and files:
+- [Astro](https://astro.build/) – Modern static site generator
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework
+- HTML, CSS, JavaScript
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## My Role
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+I handled the **entire development process**:
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Translating client requirements into a functional design
+- Implementing responsive layouts and intuitive UI
+- Optimizing performance and load times
+- Ensuring a professional look that builds client trust  
